@@ -1,9 +1,8 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 import datetime
 
-def home (request):
-    now = datetime.datetime.now()
-    html = "<html><body>it is now %s.</body></html>" %now
-    return HttpResponse(html)
+from django.http import HttpResponse
+from django.shortcuts import render
 
+
+def home(request):
+    return render(request, 'contas/home.html')
