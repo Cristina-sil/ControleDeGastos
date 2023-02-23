@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Contas</h1>
+    <h1>Seja bem vindo</h1>
+     <p>Agora são: {{now}} </p>
+     <ul>
+        {% for transacao in transacoes  %}
+            <li>
+                {{transacao}}
+            </li>
+        {% endfor %}
+     </ul>
 </body>
 </html>
